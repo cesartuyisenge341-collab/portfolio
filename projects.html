@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · Cesar Tuyisenge</title>
+  <meta name="description" content="Selected projects by Cesar Tuyisenge – IoT, web apps, AI and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader"></div>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">CESAR TUYISENGE</a>
+      <ul class="nav-links" role="list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="capabilities.html">Capabilities</a></li>
+        <li><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li><a class="nav-link" href="experience.html">Experience</a></li>
+        <li><a class="nav-link" href="global.html">Global</a></li>
+      </ul>
+      <a class="nav-cta" href="contact.html">Contact</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a class="mobile-nav-link" href="index.html">Home</a>
+    <a class="mobile-nav-link" href="about.html">About</a>
+    <a class="mobile-nav-link" href="capabilities.html">Capabilities</a>
+    <a class="mobile-nav-link active" href="projects.html">Projects</a>
+    <a class="mobile-nav-link" href="experience.html">Experience</a>
+    <a class="mobile-nav-link" href="global.html">Global</a>
+    <a class="mobile-nav-link" href="contact.html">Contact</a>
+  </div>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <div class="section-label">Projects</div>
+      <h1 class="section-title fade-up">Selected work.</h1>
+      <p class="section-subtitle fade-up">Real projects built to solve real problems — from IoT systems to web applications and AI pipelines.</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card fade-up">
+          <div class="project-cover violet">
+            <i class="fa-solid fa-microchip cover-icon violet"></i>
+            <span class="cover-label violet">IoT · Hardware</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag-primary">IoT</span><span class="tag-primary">Arduino</span><span class="tag-primary">C++</span></div>
+            <h2 class="project-title">Smart Sensor Network</h2>
+            <p class="project-desc">An IoT-based environmental monitoring system collecting temperature and humidity data via Arduino sensors, transmitting readings in real time for analysis.</p>
+            <a href="#" class="project-link">View case study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card fade-up">
+          <div class="project-cover blue">
+            <i class="fa-solid fa-globe cover-icon blue"></i>
+            <span class="cover-label blue">Web · Full-stack</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag-primary">HTML/CSS</span><span class="tag-primary">JavaScript</span><span class="tag-primary">MySQL</span></div>
+            <h2 class="project-title">Web Management System</h2>
+            <p class="project-desc">A database-driven web application with a clean UI, full CRUD operations, role-based access control, and a responsive design built for real-world use.</p>
+            <a href="#" class="project-link">View case study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card fade-up">
+          <div class="project-cover green">
+            <i class="fa-solid fa-brain cover-icon green"></i>
+            <span class="cover-label green">AI · Python</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag-primary">Python</span><span class="tag-primary">scikit-learn</span><span class="tag-primary">Data</span></div>
+            <h2 class="project-title">AI Data Classifier</h2>
+            <p class="project-desc">A machine learning pipeline for classifying datasets using scikit-learn: feature engineering, cross-validation, model comparison and result visualisation.</p>
+            <a href="#" class="project-link">View case study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card fade-up">
+          <div class="project-cover amber">
+            <i class="fa-solid fa-database cover-icon amber"></i>
+            <span class="cover-label" style="color:#D97706">DB · Backend</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag-primary">MySQL</span><span class="tag-primary">SQL</span><span class="tag-primary">Python</span></div>
+            <h2 class="project-title">Library Record System</h2>
+            <p class="project-desc">A relational database-backed record management system for a school library, handling book cataloguing, borrowing history and student records efficiently.</p>
+            <a href="#" class="project-link">View case study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card fade-up">
+          <div class="project-cover rose">
+            <i class="fa-solid fa-network-wired cover-icon rose"></i>
+            <span class="cover-label" style="color:#E11D48">Networking · Cisco</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag-primary">Cisco</span><span class="tag-primary">Packet Tracer</span><span class="tag-primary">LAN</span></div>
+            <h2 class="project-title">Campus Network Design</h2>
+            <p class="project-desc">A simulated campus network topology using Cisco Packet Tracer — VLANs, routing protocols, subnetting and basic security configuration.</p>
+            <a href="#" class="project-link">View case study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card fade-up">
+          <div class="project-cover slate">
+            <i class="fa-brands fa-figma cover-icon slate"></i>
+            <span class="cover-label" style="color:#475569">UI/UX · Figma</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag-primary">Figma</span><span class="tag-primary">UI/UX</span><span class="tag-primary">Prototyping</span></div>
+            <h2 class="project-title">Portfolio UI Design</h2>
+            <p class="project-desc">Full Figma design system for this portfolio — components, typography, colour tokens, responsive grid and interactive prototypes across all 7 pages.</p>
+            <a href="#" class="project-link">View case study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="add-card fade-up">
+        <i class="fa-solid fa-plus"></i>
+        <strong>+ Add another project</strong>
+        <p style="font-size:.8rem;margin-top:.3rem">Replace cards above with your own projects, outcomes and links.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">CT</div>
+          <div class="footer-brand-name">Cesar Tuyisenge</div>
+          <div class="footer-brand-tagline">Computer Scientist · Rwanda</div>
+          <p class="footer-brand-bio">Building practical digital solutions in Software, IoT, AI, Web, Databases and Networking.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li><li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li><li><a href="global.html">Global</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Expertise</div>
+          <ul class="footer-nav-list">
+            <li><span>Software Development</span></li><li><span>Web Development</span></li>
+            <li><span>Artificial Intelligence</span></li><li><span>IoT &amp; Embedded Systems</span></li>
+            <li><span>Databases &amp; SQL</span></li><li><span>Networking &amp; Cisco</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Get In Touch</div>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:cesartuyisenge65@gmail.com">cesartuyisenge65@gmail.com</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+250782207396">+250 782 207 396</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>Kigali, Rwanda</span></li>
+            <li><i class="fa-solid fa-briefcase"></i><span>Open to Internships &amp; Collaborations</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; <span class="footer-year"></span> Cesar Tuyisenge. All rights reserved.</div>
+        <div class="footer-bottom-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="footer-made">Built with <i class="fa-solid fa-heart" style="color:#6C47FF"></i> in Rwanda</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="scripts.js"></script>
+  <script>document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());</script>
+</body>
+</html>

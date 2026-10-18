@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cesar Tuyisenge · Computer Scientist</title>
+  <meta name="description" content="Cesar Tuyisenge – Computer Scientist from Rwanda building practical digital solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-home">
+
+  <div class="page-loader" id="pageLoader"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">CESAR TUYISENGE</a>
+      <ul class="nav-links" role="list">
+        <li><a class="nav-link active" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="capabilities.html">Capabilities</a></li>
+        <li><a class="nav-link" href="projects.html">Projects</a></li>
+        <li><a class="nav-link" href="experience.html">Experience</a></li>
+        <li><a class="nav-link" href="global.html">Global</a></li>
+      </ul>
+      <a class="nav-cta" href="contact.html">Contact</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a class="mobile-nav-link active" href="index.html">Home</a>
+    <a class="mobile-nav-link" href="about.html">About</a>
+    <a class="mobile-nav-link" href="capabilities.html">Capabilities</a>
+    <a class="mobile-nav-link" href="projects.html">Projects</a>
+    <a class="mobile-nav-link" href="experience.html">Experience</a>
+    <a class="mobile-nav-link" href="global.html">Global</a>
+    <a class="mobile-nav-link" href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <main class="page-wrapper">
+    <div class="container">
+      <div class="home-hero">
+
+        <!-- ── LEFT COLUMN ── -->
+        <div class="hero-left">
+          <h1 class="home-title fade-up">
+            I build useful<br>
+            technology with<br>
+            <span class="accent typed-wrapper">
+              <span id="typedText"></span><span class="typed-cursor" aria-hidden="true"></span>
+            </span>
+          </h1>
+
+          <p class="home-desc fade-up">
+            A Computer Science professional developing practical digital
+            solutions while continuously learning and solving real problems.
+          </p>
+
+          <div class="home-cta-row fade-up">
+            <a class="btn btn-primary" href="capabilities.html">View capabilities</a>
+            <a class="btn btn-outline" href="contact.html">Contact me</a>
+          </div>
+
+          <div class="home-focus fade-up">
+            <div class="section-label">Focus Areas</div>
+            <div class="focus-tags">
+              <span class="badge">Software</span>
+              <span class="badge">IoT</span>
+              <span class="badge">AI</span>
+              <span class="badge">Web</span>
+              <span class="badge">Databases</span>
+              <span class="badge">Networking</span>
+            </div>
+          </div>
+
+          <div class="home-how fade-up">
+            <div class="section-label">How I Work</div>
+            <div class="steps-grid">
+              <div class="step-card">
+                <div class="step-num">01</div>
+                <div class="step-title">Learn</div>
+                <div class="step-sub">Curiosity first</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">02</div>
+                <div class="step-title">Build</div>
+                <div class="step-sub">Hands-on practice</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">03</div>
+                <div class="step-title">Solve</div>
+                <div class="step-sub">Real problems</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">04</div>
+                <div class="step-title">Improve</div>
+                <div class="step-sub">Always iterating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── RIGHT COLUMN: Profile Card ── -->
+        <div class="hero-right fade-up">
+          <div class="profile-card">
+
+            <!-- Node decoration sits OUTSIDE the photo, around the whole card top -->
+            <div class="profile-nodes" aria-hidden="true">
+              <svg viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg">
+                <!-- lines -->
+                <line x1="30"  y1="80"  x2="130" y2="20"  stroke="rgba(108,71,255,0.3)" stroke-width="1"/>
+                <line x1="130" y1="20"  x2="310" y2="50"  stroke="rgba(108,71,255,0.3)" stroke-width="1"/>
+                <line x1="310" y1="50"  x2="320" y2="200" stroke="rgba(108,71,255,0.3)" stroke-width="1"/>
+                <line x1="320" y1="200" x2="30"  y2="210" stroke="rgba(108,71,255,0.3)" stroke-width="1"/>
+                <line x1="30"  y1="80"  x2="30"  y2="210" stroke="rgba(108,71,255,0.3)" stroke-width="1"/>
+                <line x1="130" y1="20"  x2="320" y2="200" stroke="rgba(108,71,255,0.18)" stroke-width="1" stroke-dasharray="4 3"/>
+                <!-- dots -->
+                <circle cx="30"  cy="80"  r="4.5" fill="rgba(108,71,255,0.55)"/>
+                <circle cx="130" cy="20"  r="4"   fill="rgba(108,71,255,0.45)"/>
+                <circle cx="310" cy="50"  r="4"   fill="rgba(108,71,255,0.45)"/>
+                <circle cx="320" cy="200" r="4.5" fill="rgba(108,71,255,0.55)"/>
+                <circle cx="30"  cy="210" r="3.5" fill="rgba(108,71,255,0.4)"/>
+              </svg>
+            </div>
+
+            <!-- Circular photo frame -->
+            <div class="profile-photo-ring">
+              <img
+                src="photo.jpg"
+                alt="Portrait of Cesar Tuyisenge"
+                class="profile-photo"
+                onerror="this.style.display='none';document.getElementById('photoPH').style.display='flex'"
+              />
+              <div id="photoPH" class="photo-fallback" style="display:none" aria-hidden="true">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </div>
+
+            <div class="profile-name">Cesar Tuyisenge</div>
+            <div class="profile-role">Computer Scientist · Rwanda</div>
+
+            <div class="profile-info-row">
+              <div class="p-info">
+                <div class="p-label">Education</div>
+                <div class="p-value">BSc Computer Science</div>
+                <div class="p-sub">Catholic University of Rwanda</div>
+              </div>
+              <div class="p-info">
+                <div class="p-label">Focus</div>
+                <div class="p-value">Human-centered tech</div>
+                <div class="p-sub">Software · IoT · AI · Web</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- end hero-right -->
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <!-- Top: brand + nav columns + contact -->
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <div class="footer-logo" aria-label="CT monogram">CT</div>
+          <div class="footer-brand-name">Cesar Tuyisenge</div>
+          <div class="footer-brand-tagline">Computer Scientist · Rwanda</div>
+          <p class="footer-brand-bio">
+            Building practical digital solutions in Software, IoT, AI, Web, Databases and Networking.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter / X" title="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="global.html">Global</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Expertise</div>
+          <ul class="footer-nav-list">
+            <li><span>Software Development</span></li>
+            <li><span>Web Development</span></li>
+            <li><span>Artificial Intelligence</span></li>
+            <li><span>IoT &amp; Embedded Systems</span></li>
+            <li><span>Databases &amp; SQL</span></li>
+            <li><span>Networking &amp; Cisco</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Get In Touch</div>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:cesartuyisenge65@gmail.com">cesartuyisenge65@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+250782207396">+250 782 207 396</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Kigali, Rwanda</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              <span>Open to Internships &amp; Collaborations</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- /footer-top -->
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; <span id="footerYear"></span> Cesar Tuyisenge. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-made">
+          Built with <i class="fa-solid fa-heart" style="color:#6C47FF" aria-hidden="true"></i> in Rwanda
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="scripts.js"></script>
+  <script>
+    /* Typed effect */
+    const words = ['clarity.', 'purpose.', 'impact.', 'precision.'];
+    let wi = 0, ci = 0, deleting = false;
+    const typedEl = document.getElementById('typedText');
+    function type() {
+      const w = words[wi];
+      if (!deleting) {
+        typedEl.textContent = w.slice(0, ++ci);
+        if (ci === w.length) { deleting = true; setTimeout(type, 2200); return; }
+      } else {
+        typedEl.textContent = w.slice(0, --ci);
+        if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
+      }
+      setTimeout(type, deleting ? 55 : 105);
+    }
+    type();
+
+    /* Footer year */
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

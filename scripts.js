@@ -71,20 +71,3 @@
 
   els.forEach(function (el) { observer.observe(el); });
 })();
-
-/* ---- Skill bar animation (capabilities page) ---- */
-(function () {
-  const fills = document.querySelectorAll('.skill-fill');
-  if (!fills.length) return;
-
-  const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.style.width = entry.target.dataset.width + '%';
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  fills.forEach(function (bar) { observer.observe(bar); });
-})();

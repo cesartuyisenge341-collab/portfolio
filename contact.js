@@ -6,17 +6,35 @@ const form = document.getElementById("contactForm");
 if (form) {
   const feedback = document.getElementById("formFeedback");
   const submit = form.querySelector('[type="submit"]');
-  const originalButton = submit.innerHTML;
+  let feedbackMessage = "";
+  let isSending = false;
   const database = isFirebaseConfigured
     ? getFirestore(initializeApp(firebaseConfig))
     : null;
 
+  function translate(message) {
+    return typeof window.portfolioTranslate === "function"
+      ? window.portfolioTranslate(message)
+      : message;
+  }
+
+  function buttonMarkup(message, loading) {
+    const icon = loading ? "fa-spinner fa-spin" : "fa-paper-plane";
+    return '<i class="fa-solid ' + icon + '" aria-hidden="true"></i> ' + translate(message);
+  }
+
   function showFeedback(message, type) {
-    feedback.textContent = message;
+    feedbackMessage = message;
+    feedback.textContent = translate(message);
     feedback.classList.remove("success", "error");
     feedback.classList.add(type);
     feedback.style.display = "block";
   }
+
+  window.addEventListener("portfolio-language-change", function () {
+    if (feedbackMessage) feedback.textContent = translate(feedbackMessage);
+    submit.innerHTML = buttonMarkup(isSending ? "Sending…" : "Send message", isSending);
+  });
 
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -42,7 +60,8 @@ if (form) {
     }
 
     submit.disabled = true;
-    submit.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Sending…';
+    isSending = true;
+    submit.innerHTML = buttonMarkup("Sending…", true);
 
     try {
       await addDoc(collection(database, "contactMessages"), {
@@ -58,8 +77,9 @@ if (form) {
       console.error("Unable to submit contact form to Firebase.", error);
       showFeedback("Your message could not be sent. Please try again or email me directly.", "error");
     } finally {
+      isSending = false;
       submit.disabled = false;
-      submit.innerHTML = originalButton;
+      submit.innerHTML = buttonMarkup("Send message", false);
     }
   });
 }

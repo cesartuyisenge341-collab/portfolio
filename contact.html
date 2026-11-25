@@ -69,11 +69,11 @@
             <div class="form-title">Or send a quick message</div>
             <form id="contactForm" novalidate>
               <div class="form-row">
-                <div class="form-group"><label for="fname">Name *</label><input type="text" id="fname" name="name" placeholder="Your name" required autocomplete="given-name"/></div>
-                <div class="form-group"><label for="femail">Email *</label><input type="email" id="femail" name="email" placeholder="your@email.com" required autocomplete="email"/></div>
+                <div class="form-group"><label for="fname">Name *</label><input type="text" id="fname" name="name" placeholder="Your name" required maxlength="100" autocomplete="given-name"/></div>
+                <div class="form-group"><label for="femail">Email *</label><input type="email" id="femail" name="email" placeholder="your@email.com" required maxlength="254" autocomplete="email"/></div>
               </div>
-              <div class="form-group"><label for="fsubject">Subject</label><input type="text" id="fsubject" name="subject" placeholder="What's it about?"/></div>
-              <div class="form-group"><label for="fmessage">Message *</label><textarea id="fmessage" name="message" placeholder="Tell me about your project or opportunity…" required></textarea></div>
+              <div class="form-group"><label for="fsubject">Subject</label><input type="text" id="fsubject" name="subject" placeholder="What's it about?" maxlength="150"/></div>
+              <div class="form-group"><label for="fmessage">Message *</label><textarea id="fmessage" name="message" placeholder="Tell me about your project or opportunity…" required maxlength="5000"></textarea></div>
               <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send message</button>
               <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
             </form>
@@ -160,6 +160,7 @@
 
   <button class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
   <script src="scripts.js"></script>
+  <script type="module" src="contact.js"></script>
   <script>document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());</script>
 </body>
 </html>
